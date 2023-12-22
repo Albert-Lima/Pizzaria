@@ -1,0 +1,347 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --Cor-1: #FFD12F;
+    --Cor-2: #8A6B00;
+    --Cor-3: #56000096;
+    --Cor-4: #560000c4;
+    --Cor-5: #2F0E0E;
+    --FontParágrafos: 'League Spartan', sans-serif;
+    --FontTitles: 'Marck Script', cursive;
+}
+@keyframes abrirCardápio {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 600px;
+    }
+}
+
+#SeçãoTopo{
+    background-image: url("imagens/background-pizzaria-teste-G.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+header{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+#AbaMenu{
+    width: 400px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.bttNormalMenu{
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-family: var(--FontParágrafos);
+    font-size: 11pt;
+    font-weight: 600;
+}
+#pedidoBTT{
+    background-color: var(--Cor-1);
+    color: var(--Cor-5);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: var(--FontParágrafos);
+    font-size: 11pt;
+    font-weight: 600;
+}
+#PresentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    width: 400px;
+    left: calc( 50% - 200px);
+    top: 20%;
+    position: absolute;
+}
+#BemVindoBox h1{
+    color: var(--Cor-1);
+    font-family: var(--FontTitles);
+    font-size: 45pt;
+    font-weight: 400;
+}
+#LogoBox img{
+    width: 280px;
+}
+#SocialNetWork{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 90vh;
+    right: 30px;
+    width: 70px;
+}
+#SocialNetWork img{
+    height: 30px;
+}
+
+
+
+
+#SeçãoQuemSomos{
+    height: 100vh;
+}
+#História{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;
+}
+.NomePizza{
+    color: var(--Cor-2);
+    font-family: var(--FontTitles);
+    font-weight: 400;
+    font-size: 28pt;
+    margin-left: 70px;
+}
+.DescWho{
+    font-family: var(--FontTitles);
+    font-weight: 500;
+    font-size: 28pt;
+    margin-top: -20px;
+}
+.QuemSomosParágrafo{
+    font-family: var(--FontParágrafos);
+    font-size: 12pt;
+    margin-top: 20px;
+}
+.bttVerMais{
+    background-color: var(--Cor-2);
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 13px;
+    padding-right: 13px;
+    color: white;
+    font-family: var(--FontTitles);
+    font-size: 12pt;
+    cursor: pointer;
+}
+#TextHistória{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+#imgRestaurante{
+    width: 50%;
+    height: 100%;
+    background-image: url("imagens/foto_pizzaria.jpg");
+    background-size: cover;
+    opacity: 0.5;
+}
+#TextQuemSomos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+#imgNós{
+    width: 50%;
+    height: 100%;
+    background-image: url("imagens/foto_pizza_média.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+#QuemSomos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;
+}
+
+
+#SeçãoCardápio{
+    width: 100%;
+    height: max-content;
+}
+#desconto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 270px;
+    width: 100%;
+    background-image: url("imagens/teste2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#PorcentoDesconto{
+    color: white;
+    font-family: var(--FontParágrafos);
+    font-size: 35pt;
+    font-weight: 400;
+}
+#DescDesconto{
+    color: white;
+    font-family: var(--FontParágrafos);
+    font-size: 12pt;
+}
+.ShowCardapio1{
+    display: block;
+    background-color: var(--Cor-2);
+    color: white;
+    font-family: var(--FontParágrafos);
+    font-size: 15pt;
+    padding: 10px;
+    margin-top: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.ShowCardapio2{
+    display: none;
+}
+#ShowCardapio:hover{
+    transition: 0.2s;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.27);
+}
+.Cardápio1-1{
+    height: 0px;
+    background-color: green;
+}
+.Cardápio1-2{
+    animation-name: abrirCardápio;
+    animation-duration: 1s;
+    animation-direction: normal ;
+    animation-iteration-count: initial;
+    height: 800px;
+    background-color: green;
+}
+.Opções1{
+    display: none;
+}
+.Opções2{
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 450px 200px;
+    justify-content: center;
+    gap: 50px;
+    background-color: white;
+    margin: auto;
+}
+.TiposPizzaCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin: auto;
+    width: 500px;
+    margin-top: 30px;
+    gap: 10px;
+}
+.LinhaEsquerda{
+    height: 1px;
+    width: 20%;
+    border-top: 1px solid rgb(29, 29, 29);
+}
+.TitlePizzas{
+    color: var(--Cor-2);
+    font-family: var(--FontParágrafos);
+    font-weight: 600;
+}
+.LinhaDireita{
+    height: 1px;
+    width: 30%;
+    border-top: 1px solid rgb(29, 29, 29);
+}
+.Sabores{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-top: 30px;
+}
+.Sabor{
+    margin-top: 20px;
+}
+.ContentPizza{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+    justify-content: space-between;
+}
+.NomeSabor{
+    font-family: var(--FontTitles);
+    font-size: 25pt;
+    font-weight: 400;
+    color: var(--Cor-2)
+}
+.TextoSabor{
+    font-family: var(--FontParágrafos);
+    font-size: 12pt;
+    margin-top: 5px;
+    max-width: 400px;
+}
+#LinhaSeparadora1{
+    border-top: 1px dashed gray;
+    width: 40%;
+}
+#LinhaSeparadora2{
+    border-top: 1px dashed gray;
+    width: 20%;
+}
+#LinhaSeparadora3{
+    border-top: 1px dashed gray;
+    width: 25%;
+}
+
+.BttRedCard1{
+    display: none;
+}
+.BttRedCard2{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 30px;
+    gap: 50px;
+    align-content: center;
+    justify-content: center;
+}
+#bttCloseCardápio, #MonteSeuPedidobtt{
+    background-color: var(--Cor-1);
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    width: 150px;
+    color: var(--Cor-5);
+    font-family: var(--FontParágrafos);
+    font-weight: 500;
+    cursor: pointer;
+}
