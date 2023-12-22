@@ -20,6 +20,10 @@
     }
 }
 
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
 #SeçãoTopo{
     background-image: url("imagens/background-pizzaria-teste-G.jpg");
     background-size: cover;
@@ -237,11 +241,11 @@ header{
 }
 .Cardápio1-2{
     animation-name: abrirCardápio;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-direction: normal ;
     animation-iteration-count: initial;
-    height: 800px;
-    background-color: green;
+    height: 750px;
+    background-color: white;
 }
 .Opções1{
     display: none;
@@ -250,10 +254,9 @@ header{
     max-width: 1300px;
     display: grid;
     grid-template-columns: 500px 500px;
-    grid-template-rows: 450px 200px;
+    grid-template-rows: 420px 200px;
     justify-content: center;
     gap: 50px;
-    background-color: white;
     margin: auto;
 }
 .TiposPizzaCard{
@@ -322,7 +325,41 @@ header{
     border-top: 1px dashed gray;
     width: 25%;
 }
-
+#LinhaSeparadora4{
+    border-top: 1px dashed gray;
+    width: 35%;
+}
+#LinhaSeparadora5{
+    border-top: 1px dashed gray;
+    width: 30%;
+}
+#LinhaSeparadora6{
+    border-top: 1px dashed gray;
+    width: 20%;
+}
+#LinhaSeparadora7{
+    border-top: 1px dashed gray;
+    width: 3%;
+}
+#LinhaSeparadora8{
+    border-top: 1px dashed gray;
+    width: 10%;
+}
+#LinhaSeparadora9{
+    border-top: 1px dashed gray;
+    width: 10%;
+}
+#LinhaSeparadora10{
+    border-top: 1px dashed gray;
+    width: 20%;
+}
+#tiposBordas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 950px;
+}
 .BttRedCard1{
     display: none;
 }
@@ -342,6 +379,17 @@ header{
     width: 150px;
     color: var(--Cor-5);
     font-family: var(--FontParágrafos);
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
+}
+
+#SlidesPratos{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: max-content;
+    overflow-x: scroll;
+}
+.BoxPratos{
+    width: 200px;
 }
