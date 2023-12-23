@@ -189,7 +189,6 @@ header{
     height: 50vh;
 }
 
-
 #SeçãoCardápio{
     width: 100%;
     height: max-content;
@@ -201,9 +200,10 @@ header{
     justify-content: center;
     height: 270px;
     width: 100%;
-    background-image: url("imagens/teste2.jpg");
+    background-image: url("imagens/backgroundDesconto1.jpg");
     background-size: cover;
     background-position: center;
+    box-shadow: inset 0px 0px 150px 50px black;
 }
 #PorcentoDesconto{
     color: white;
@@ -386,10 +386,197 @@ header{
 #SlidesPratos{
     display: flex;
     flex-direction: row;
-    height: 200px;
-    width: max-content;
+    height: 300px;
+    width: 100%;
     overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: gray;
 }
+
+/*Edição da barra de scroll para o Chromes*/
+#SlidesPratos::-webkit-scrollbar{
+    background-color: black;
+    height: 8px;
+}
+#SlidesPratos::-webkit-scrollbar-thumb{
+    background-color: var(--Cor-2);
+    height: 10px;
+    border-radius: 5px;
+}
+
 .BoxPratos{
-    width: 200px;
+    width: 300px;
+}
+.BoxShowHover{
+    width: 300px;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.fundoLupa{
+    display: none;
+}
+.DisheName{
+    display: none;
+}
+.BoxShowHover:hover{
+    transition: 0.2s;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(116, 0, 0, 0.712);
+    .fundoLupa{
+        background-color: rgba(131, 131, 131, 0.377);
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .fundoLupa img{
+        rotate: -90deg;
+        height: 35px;
+        width: 35px;
+    }
+    .DisheName{
+        display: block;
+        color: var(--Cor-1);
+        font-family: var(--FontTitles);
+        font-size: 18pt;
+        font-weight: 400;
+    }
+}
+#Prato1{
+    background-image: url('imagens/pizza_marguerita.jpg');
+    background-size: cover;
+    background-position: left center;
+}
+#Prato2{
+    background-image: url('imagens/pizza_peperoni.jpg');
+    background-size: cover;
+    background-position: left center;
+}
+#Prato3{
+    background-image: url('imagens/pizza_4queijos.jpg');
+    background-size: cover;
+    background-position: left center;
+}
+#Prato4{
+    background-image: url('imagens/pizza_vegetariana.jpg');
+    background-size: cover;
+    background-position: left center;
+}
+#Prato5{
+    background-image: url('imagens/pizza_mediterrânea.jpg');
+    background-size: cover;
+    background-position: left center;
+}
+#Prato6{
+    background-image: url('imagens/pizza_FrangoCatupiry.jpg');
+    background-size: cover;
+    background-position: left center;
+}
+#Prato7{
+    background-image: url('imagens/pizza_calabresa.jpg');
+    background-size: cover;
+    background-position: left center;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.938);
+    height: 400px;
+}
+#LogoFooter{
+    position: relative;
+    left: 20px;
+    bottom: -20px;
+    width: 100px;
+}
+#LogoFooter img{
+    height: 100px;
+}
+#Contatos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    gap: 150px;
+}
+.CardContato{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 200px;
+}
+.TitleContatos{
+    color: var(--Cor-2);
+    font-size: 12pt;
+    font-family: var(--FontParágrafos);
+}
+.InfoContato{
+    margin-top: 10px;
+}
+.SecTitleContact{
+    color: white;
+    font-family: var(--FontParágrafos);
+    font-size: 10pt;
+}
+.TextContact{
+    color: gray;
+    font-family: var(--FontParágrafos);
+    font-size: 10pt;
+    font-weight: 300;
+    margin-top: 5px;
+}
+.LocalContactBox{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 5px;
+}
+.IconContact{
+    height: 20px;
+}
+#CopyWriting{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-family: var(--FontParágrafos);
+}
+#InfoImages p{
+    font-size: 10pt;
+    font-weight: 300;
+    color: white;
+}
+#Direitos{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+#Selo{
+    font-size: 10pt;
+    font-weight: 400;
+    color: white;
+}
+#AlbertRights{
+    font-size: 10pt;
+    font-weight: 500;
+    color: var(--Cor-1);
+}
+#ComlementoAlbert{
+    font-size: 10pt;
+    font-weight: 300;
+    color: white;
 }
