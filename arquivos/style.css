@@ -22,7 +22,6 @@
 
 body{
     background-color: black;
-    overflow-x: hidden;
 }
 #SeçãoTopo{
     background-image: url("imagens/background-pizzaria-teste-G.jpg");
@@ -252,11 +251,14 @@ header{
     height: 750px;
     background-color: white;
 }
+#SeçãoCardápio{
+    background-color: green;
+}
 .Opções1{
     display: none;
 }
 .Opções2{
-    max-width: 1300px;
+    width: 80%;
     display: grid;
     grid-template-columns: 500px 500px;
     grid-template-rows: 420px 200px;
@@ -274,6 +276,7 @@ header{
     margin-top: 30px;
     gap: 10px;
 }
+
 .LinhaEsquerda{
     height: 1px;
     width: 20%;
@@ -594,6 +597,7 @@ footer{
 }
 @media (max-width:1120px){
     .Opções2{
+        width: 480px;
         grid-template-columns: 480px;
         grid-template-rows: 420px 420px 200px;
         gap: 10px;
@@ -609,10 +613,8 @@ footer{
         margin-top: 80px;
     }
     #tiposBordas{
-        display: flex;
         flex-direction: column;
-        align-items: start;
-        justify-content: center;
+        width: 400px;
     }
     #Contatos{
         gap: 30px;
@@ -738,13 +740,29 @@ footer{
     #imgNós{
         display: none;
     }
+    .ContentPizza{
+        width: 300px;
+    }
     .Opções2{
         grid-template-columns: 300px;
-        grid-template-rows: 300px 300px 100px;
+        grid-template-rows: 300px 300px 250px;
         gap: 0px;
+        width: 100%;
+    }
+    #tiposBordas{
+        width: 300px;
+    }
+    .BttRedCard2{
+        margin-top: 30px;
+        width: max-content;
+        margin: auto;
+        gap: 10px;
+    }
+    .TiposPizzaCard{
+        width: 90%;
     }
     .TitlePizzas{
-        font-size: 15pt;
+        font-size: 10pt;
     }
     .NomeSabor{
         font-size: 12pt;
@@ -757,43 +775,43 @@ footer{
     }
     #LinhaSeparadora1{
         border-top: 1px dashed gray;
-        width: 60%;
+        width: 40%;
     }
     #LinhaSeparadora2{
         border-top: 1px dashed gray;
-        width: 50%;
+        width: 40%;
     }
     #LinhaSeparadora3{
         border-top: 1px dashed gray;
-        width: 50%;
+        width: 40%;
     }
     #LinhaSeparadora4{
         border-top: 1px dashed gray;
-        width: 50%;
+        width: 30%;
     }
     #LinhaSeparadora5{
         border-top: 1px dashed gray;
-        width: 50%;
+        width: 40%;
     }
     #LinhaSeparadora6{
         border-top: 1px dashed gray;
-        width: 50%;
+        width: 40%;
     }
     #LinhaSeparadora7{
         border-top: 1px dashed gray;
-        width: 40%;
+        width: 30%;
     }
     #LinhaSeparadora8{
         border-top: 1px dashed gray;
-        width: 40%;
+        width: 30%;
     }
     #LinhaSeparadora9{
         border-top: 1px dashed gray;
-        width: 35%;
+        width: 25%;
     }
     #LinhaSeparadora10{
         border-top: 1px dashed gray;
-        width: 45%;
+        width: 35%;
     }
     #Contatos{
         gap: 0px;
