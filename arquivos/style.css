@@ -243,7 +243,6 @@ header{
 }
 .Cardápio1-1{
     height: 0px;
-    background-color: green;
 }
 .Cardápio1-2{
     animation-name: abrirCardápio;
@@ -594,8 +593,32 @@ footer{
     }
 }
 @media (max-width:1120px){
+    .Opções2{
+        grid-template-columns: 480px;
+        grid-template-rows: 420px 420px 200px;
+        gap: 10px;
+    }
+    .Sabores{
+        margin-top: 5px;
+    }
+    .Cardápio1-2{
+        height: max-content;
+        padding-bottom: 20px;
+    }
+    #CardBorda{
+        margin-top: 80px;
+    }
+    #tiposBordas{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
     #Contatos{
         gap: 30px;
+    }
+    .BttRedCard2{
+        margin-top: 100px;
     }
 }
 @media (max-width: 880px){
@@ -674,7 +697,7 @@ footer{
 }
 @media (max-width: 500px){
     #SeçãoTopo{
-        box-shadow: inset 0px 0px 400px 300px rgba(0, 0, 0, 0.76);
+        box-shadow: inset 0px 0px 400px 300px rgba(0, 0, 0, 0.61);
     }
     #BemVindoBox h1{
         font-size: 25pt;
@@ -714,6 +737,63 @@ footer{
     }
     #imgNós{
         display: none;
+    }
+    .Opções2{
+        grid-template-columns: 300px;
+        grid-template-rows: 300px 300px 100px;
+        gap: 0px;
+    }
+    .TitlePizzas{
+        font-size: 15pt;
+    }
+    .NomeSabor{
+        font-size: 12pt;
+    }
+    .TextoSabor{
+        font-size: 10pt;
+    }
+    .PreçoPizza{
+        font-size: 10pt;
+    }
+    #LinhaSeparadora1{
+        border-top: 1px dashed gray;
+        width: 60%;
+    }
+    #LinhaSeparadora2{
+        border-top: 1px dashed gray;
+        width: 50%;
+    }
+    #LinhaSeparadora3{
+        border-top: 1px dashed gray;
+        width: 50%;
+    }
+    #LinhaSeparadora4{
+        border-top: 1px dashed gray;
+        width: 50%;
+    }
+    #LinhaSeparadora5{
+        border-top: 1px dashed gray;
+        width: 50%;
+    }
+    #LinhaSeparadora6{
+        border-top: 1px dashed gray;
+        width: 50%;
+    }
+    #LinhaSeparadora7{
+        border-top: 1px dashed gray;
+        width: 40%;
+    }
+    #LinhaSeparadora8{
+        border-top: 1px dashed gray;
+        width: 40%;
+    }
+    #LinhaSeparadora9{
+        border-top: 1px dashed gray;
+        width: 35%;
+    }
+    #LinhaSeparadora10{
+        border-top: 1px dashed gray;
+        width: 45%;
     }
     #Contatos{
         gap: 0px;
