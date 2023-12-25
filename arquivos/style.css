@@ -56,6 +56,10 @@ header{
     font-size: 11pt;
     font-weight: 600;
 }
+.bttNormalMenu:hover{
+    color: rgb(199, 199, 199);
+    transition: 0.2s;
+}
 #pedidoBTT{
     background-color: var(--Cor-1);
     color: var(--Cor-5);
@@ -69,6 +73,10 @@ header{
     font-family: var(--FontParágrafos);
     font-size: 11pt;
     font-weight: 600;
+}
+#pedidoBTT:hover{
+    transition: 0.1s;
+    scale: 1.1;
 }
 #PresentContainer{
     display: flex;
@@ -103,8 +111,6 @@ header{
 #SocialNetWork img{
     height: 30px;
 }
-
-
 
 
 #SeçãoQuemSomos{
@@ -579,4 +585,201 @@ footer{
     font-size: 10pt;
     font-weight: 300;
     color: white;
+}
+
+/*responsividade*/
+@media (max-width: 1300px){
+    #SeçãoTopo{
+        box-shadow: inset 0px 0px 500px 400px rgba(0, 0, 0, 0.582);
+    }
+}
+@media (max-width:1120px){
+    #Contatos{
+        gap: 30px;
+    }
+}
+@media (max-width: 880px){
+    #TextHistória{
+        width: 70%;
+    }
+    #TextQuemSomos{
+        width: 70%;
+    }
+    .QuemSomosParágrafo{
+        max-width: 80%;
+    }
+    #PorcentoDesconto{
+        font-size: 20pt;
+    }
+    #DescDesconto{
+        max-width: 60%;
+    }
+}
+@media (max-width: 720px){
+    #Contatos{
+        margin: auto;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 100px 100px;
+    }
+    #LogoFooter{
+        left: 85%;
+        height: 50px;
+        width: 50px;
+    }
+    #LogoFooter img{
+        height: 50px;
+        width: 50px;
+    }
+}
+@media (max-width: 600px){
+    #AbaMenu{
+        margin: auto;
+    }
+    #PorcentoDesconto{
+        font-size: 15pt;
+        font-weight: 700;
+    }
+    #DescDesconto{
+        font-size: 10pt;
+        max-width: 70%;
+    }
+    #Contatos{
+        gap: 10px;
+    }
+    #CopyWriting{
+        gap: 10px;
+    }
+    #InfoImages p{
+        font-size: 8pt;
+        font-weight: 300;
+    }
+    #Selo, #AlbertRights, #ComlementoAlbert{
+        font-size: 8pt;
+    }
+    .TitleContatos{
+        font-size: 10pt;
+    }
+    .SecTitleContact, .TextContact{
+        font-size: 8pt;
+        margin-top: 0px;
+    }
+    .IconContact{
+        height: 10px;
+    }
+    .LocalContactBox{
+        align-items: start;
+    }
+}
+@media (max-width: 500px){
+    #SeçãoTopo{
+        box-shadow: inset 0px 0px 400px 300px rgba(0, 0, 0, 0.76);
+    }
+    #BemVindoBox h1{
+        font-size: 25pt;
+    }
+    #PresentContainer{
+        height: 200px;
+    }
+    #LogoBox{
+        height: 150px;
+        width: 150px;
+    }
+    #LogoBox img{
+        height: 150px;
+        width: 150px;
+    }
+    #AbaMenu{
+        height: 30px;
+        width: 40px;
+        background-repeat: no-repeat;
+        background-image: url('imagens/img-aba-principal-portifólio.png');
+        background-size: cover;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .bttMenus{
+        display: none;
+    }
+    #TextHistória{
+        width: 100%;
+    }
+    #imgRestaurante{
+        display: none;
+    }
+    #TextQuemSomos{
+        width: 100%;
+    }
+    #imgNós{
+        display: none;
+    }
+    #Contatos{
+        gap: 0px;
+    }
+    #SlidesPratos{
+        height: 208px;
+    }
+    .BoxPratos{
+        width: 200px;
+        height: 200px;
+    }
+    .BoxShowHover{
+        width: 200px;
+        height: 100%;
+    }
+    .BoxShowHover:hover{
+        transition: 0.2s;
+        width: 200px;
+        height: 100%;
+        background-color: rgba(116, 0, 0, 0.712);
+        .fundoLupa{
+            background-color: rgba(131, 131, 131, 0.377);
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .fundoLupa img{
+            rotate: -90deg;
+            height: 25px;
+            width: 25px;
+        }
+        .DisheName{
+            display: block;
+            color: var(--Cor-1);
+            font-family: var(--FontTitles);
+            font-size: 12pt;
+            font-weight: 400;
+        }
+    }
+}
+@media (max-width:420px){
+    #PorcentoDesconto{
+        font-size: 10pt;
+        font-weight: 600;
+    }
+    #DescDesconto{
+        font-size: 7pt;
+        max-width: 70%;
+    }
+    #Contatos{
+        grid-template-columns: 200px;
+        grid-template-rows: 100px 120px 40px;
+    }
+    #CopyWriting{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #LogoFooter{
+        display: none;
+    }
+    #Contatos{
+        margin-top: 80px;
+    }
 }
