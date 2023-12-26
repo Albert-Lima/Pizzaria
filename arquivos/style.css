@@ -36,13 +36,27 @@ header{
     align-items: center;
     justify-content: end;
 }
-#AbaMenu{
+.BttMenu1{
     width: 400px;
     margin-right: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+.BttMenu2{
+    width: 400px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.OpCloseMenu1{
+    display: none;
+}
+.OpCloseMenu2{
+    display: none;
 }
 .bttNormalMenu{
     background: none;
@@ -715,18 +729,63 @@ footer{
         height: 150px;
         width: 150px;
     }
-    #AbaMenu{
-        height: 30px;
-        width: 40px;
-        background-repeat: no-repeat;
-        background-image: url('imagens/img-aba-principal-portifólio.png');
-        background-size: cover;
-        position: absolute;
+    .BttMenu1{
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        margin-right: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        justify-content: center;
+        transition: 0.2s;
+        background-color: rgb(0, 0, 0);
+    }
+    .BttMenu2{
+        background-color: black;
+        width: 300px;
+        height: 380px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 3001;
+        transition: 0.2s;
+        position: fixed;
         top: 10px;
         right: 10px;
     }
-    .bttMenus{
+    .OpCloseMenu1{
+        height: 30px;
+        width: 40px;
+        background-image: url('imagens/img-aba-principal-portifólio.png');
+        display: block;
+        background-size: cover;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        cursor: pointer;
+    }
+    .OpCloseMenu2{
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        background-image: url('imagens/Fechar-Icon.png');
+        display: block;
+        background-size: cover;
+        position: relative;
+        top: -40px;
+        right: -120px;
+    }
+    .bttMenus1{
         display: none;
+    }
+    .bttMenus2{
+        display: block;
     }
     #TextHistória{
         width: 100%;
