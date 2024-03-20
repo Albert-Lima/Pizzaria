@@ -10,6 +10,7 @@ var Cardapio = document.querySelector('#cardapio')
 var Opções = document.querySelector('#Opções')
 var LinhaBase = document.querySelector('#Especiais')
 var AbaWho = document.querySelector('#História')
+var SectionDesconto = document.querySelector("#desconto")
 
 bttSobreNós.addEventListener('click', ()=>{
     var elementoRect1 = AbaWho.getBoundingClientRect()
@@ -19,18 +20,16 @@ bttSobreNós.addEventListener('click', ()=>{
         behavior: 'smooth'
     })
 })
-bttCardápio.addEventListener('click', ()=>{
-    var elementoRect1 = Cardapio.getBoundingClientRect()
+
+function ToCardapio(){
+    var elementoRect1 = SectionDesconto.getBoundingClientRect()
     var centerY1 = elementoRect1.top + elementoRect1.height/ 2 - window.innerHeight/ 2
     window.scrollTo({
         top: centerY1 + window.scrollY,
         behavior: 'smooth'
     })
-})
-
-
-
-
+}
+bttCardápio.addEventListener('click', ToCardapio)
 
 
 
@@ -84,4 +83,6 @@ bttCloseCardápio.addEventListener('click', ()=>{
 
     BttRedCard.classList.toggle('BttRedCard2')
     BttRedCard.classList.toggle('BttRedCard1')
+
+    ToCardapio();
 })
